@@ -9,55 +9,166 @@
         content="Andrew Parli">
 
   <title>IDE Assignment 1</title>
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <script type="text/javascript">
+    function addImage() {
+      var a = document.createElement("a");
+      var i = document.createElement("img");
+      i.src = "https://images-assets.nasa.gov/image/PIA21971/PIA21971~orig.jpg";
+      a.href = "https://images.nasa.gov/details-PIA21971.html";
+      a.target = "_blank"
+      document.getElementById("addImageHere").appendChild(a).appendChild(i);
+    }
+  </script>
+
+  <style>
+
+    body {
+      background: lightgray;
+      width: 95%;
+      max-width: 600px;
+      margin-top: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 0px;
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      color: darkred;
+      font-size: x-large;
+      margin-top: 0px;
+    }
+
+    h2 {
+      color: darkred;
+      font-size: large;
+      /*font-weight: normal;*/
+      margin-top: 30px;
+      margin-bottom: 0px
+    }
+
+    h3 {
+      color: darkred;
+      font-weight: normal;
+    }
+
+    p {
+      color: black;
+      font-size: medium;
+      margin-top: 0px;
+    }
+
+    a {
+      color: black;
+      font-weight: normal;
+      /*text-decoration: none;*/
+    }
+
+    img {
+      max-width: 100%;
+      /*max-height: 400px;*/
+    }
+
+    .content {
+      background: white;
+      padding-top: 40px;
+      padding-bottom: 100px;
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-bottom: 200px;
+    }
+
+    .mono {
+      font-family: monospace;
+      font-size: large;
+      font-style: normal;
+      font-weight: normal;
+
+    }
+
+    .part {
+      font-style: italic;
+    }
+
+  </style>
+
 </head>
 
 <body>
+<div class="content">
 <h1>Project 1: Warming up</h1>
-<p>Since this is the first project, we'll start off slowly. The idea with this project is to gain some experience with setting up a web-page, and writing HTML, CSS and JavaScript.
+<p>Since this is the first project, we'll start off slowly. The idea with this project is to gain some experience with setting up a web-page, and writing <span class="mono">HTML</span>, <span class="mono">CSS</span> and <span class="mono">JavaScript</span>.
 
-You will need a server somewhere to host the files that you will create in the course. We recommend that you use GitHub Pages for this purpose - this will also make sharing files among group members easier. This page <a href="https://pages.github.com/" target="_blank">https://pages.github.com/</a> gives a detailed walk-through of how to set it up (Note that you want to set up a Project site and that you should Start from scratch). If you have another server already set up, you are of course also welcome to use that. If github is new to you, or if you don't know which editor to use for editing HTML, Javascript and CSS files, please see <a href="https://absalon.instructure.com/courses/22192/pages/setting-up-a-github-repository-and-an-editor" target="_blank">Setting up a github repository and an editor</a>.</p>
+You will need a server somewhere to host the files that you will create in the course. We recommend that you use <span class="mono">GitHub Pages</span> for this purpose - this will also make sharing files among group members easier. This page <a class="mono" href="https://pages.github.com/" target="_blank">https://pages.github.com/</a> gives a detailed walk-through of how to set it up (Note that you want to set up a Project site and that you should Start from scratch). If you have another server already set up, you are of course also welcome to use that. If <span class="mono">GitHub</span> is new to you, or if you don't know which editor to use for editing <span class="mono">HTML</span>, <span class="mono">Javascript</span> and <span class="mono">CSS</span> files, please see <a class="mono" href="https://absalon.instructure.com/courses/22192/pages/setting-up-a-github-repository-and-an-editor" target="_blank">Setting up a <span class="mono">GitHub</span> repository and an editor</a>.</p>
 
 <h2>Part 1</h2>
-Convince yourself that for any number n>1, there exist numbers p and q such that n=3p + 2q.
+<p class="part">Convince yourself that for any number n>1, there exist numbers p and q such that n=3p + 2q.</p>
+I am now convinced!
 
 <h2>Part 2</h2>
-    <li>Find a group consisting of 2 or 3 members. Create the group in Absalon.</li>
+<p class="part">Find a group consisting of 2 or 3 members. Create the group in Absalon.</p>
+Our group has yet to be created but will include:
+<ul>
+  <li>Andrew (qcm239)</li>
+  <li>Vik (------)</li>
+</ul>
 
 <h2>Part 3</h2>
-    <li>Create an empty .html page</li>
+<p class="part">Create an empty <span class=mono>.html</span> page</p>
+<p>Done! But as you can see, it is not so <em>empty</em> any more!</p>
+<p>We are hosting this project page on <span class="mono">GitHub</span>.</p>
 
 <h2>Part 4</h2>
-    <li>Add a header to the page.</li>
+<p class="part">Add a header to the page.</p>
+<p> Yeah so, we added a lot of headers to the page. It just looked so lonely with only one header.</p>
 
 <h2>Part 5</h2>
-    <li>Add a style section to the header of the page, and use it to change the color of the header to one of your choosing.</li>
+<p class="part">Add a style section to the header of the page, and use it to change the color of the header to one of your choosing.</p>
+<p> In our style section, we changed the <span class="mono">color</span> attribute in <span class="mono">h1</span>, <span class="mono">h2</span> and <span class="mono">h3</span> to <span class="mono">darkred</span>.</p>
 
 <h2>Part 6</h2>
-    <li>Add a small, interesting image to the .html page.</li>
+<p class="part">Add a small, interesting image to the <span class="mono">.html</span> page.</p>
+<a href="https://images.nasa.gov/details-PIA15415.html" target="_blank">
+  <img href="" src="https://images-assets.nasa.gov/image/PIA15415/PIA15415~orig.jpg">
+</a>
 
 <h2>Part 7</h2>
-    <li>Add another small, interesting image to the .html page, but now using only JavaScript (there should be no mention of the image anywhere within the &lt;body&gt;...&lt;/body&gt; section.</li>
+<p class="part">Add another small, interesting image to the .html page, but now using only JavaScript (there should be no mention of the image anywhere within the <span class="mono">&lt;body&gt;...&lt;/body&gt;</span> section.</p>
+
+<div id="addImageHere">
+  <script type="text/javascript">
+    addImage();
+  </script>
+</div>
 
 <h2>Part 8</h2>
-    <li>Create a list with links to two interactive visualizations that you've found on the web (not made by you). Describe positive and negative aspects about them.</li>
+<p class="part">Create a list with links to two interactive visualizations that you've found on the web (not made by you). Describe positive and negative aspects about them.</p>
+
+<ul>
+  <li>One</li>
+    <p> About one... blah..blah..blah</p>
+  <li>Two</li>
+    <p> About one... blah..blah..blah</p>
+</ul>
 
 <h2>Part 9</h2>
-    <li>Individual part: For each member in the group, describe an interactive visualization that you would like to be able to build after this course has finished (just create a header for each group member on the .html page). If possible include elements like:</li>
+<p class="part">Individual part: For each member in the group, describe an interactive visualization that you would like to be able to build after this course has finished (just create a header for each group member on the <span class="mono">.html</span> page). If possible include elements like:</p>
 
-<h3>What type of data would you like to visualize?</h3>
-<h3>Where would you get access to this data?</h3>
+<h3>Andrew</h3>
+<p class="part">What type of data would you like to visualize?</p>
+<p class="part">Where would you get access to this data?</p>
+<p class="part">What story would the combination of text and visualization tell?</p>
+<p class="part">Who is the intended audience?</p>
+<p class="part">A sketch/mockup of the visualization.</p>
 
-<!--
-    <ol>
-        <li>What story would the combination of text and visualization tell?</li>
-        <li>Who is the intended audience?</li>
-        <li>A sketch/mockup of the visualization.</li>
-    </ol>
-</ol>
+<h3>Vik</h3>
+<p class="part">What type of data would you like to visualize?</p>
+<p class="part">Where would you get access to this data?</p>
+<p class="part">What story would the combination of text and visualization tell?</p>
+<p class="part">Who is the intended audience?</p>
+<p class="part">A sketch/mockup of the visualization.</p>
 
-<img src="img1.jpg" alt="Test image 1" height=100 width=100>
-
--->
+</div>
 </body>
 </html>
