@@ -72,6 +72,17 @@
       /*max-height: 400px;*/
     }
 
+    table {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+    }
+
+    th {
+      text-align: left;
+    }
+
     .content {
       background: white;
       padding-top: 40px;
@@ -106,34 +117,53 @@ You will need a server somewhere to host the files that you will create in the c
 
 <h2>Part 1</h2>
 <p class="part">Convince yourself that for any number n>1, there exist numbers p and q such that n=3p + 2q.</p>
-I am now convinced!
+
+<p>So there are two cases for n, it is either even or odd. Let's start be looking at the case where n is even. We know that an arbitrary even numbers is simply a multiple of two, therefore q is simply this multiplicity factor.</p>
+
+<p>Now we consider the case where n is an arbitrary odd number larger than one. Under these assumptions, we know that n-1 is an even number. Next, we know that 3=1+2. Thus it is clear that when n is odd, we set p=1 and q is the multiplicity of 2 that results in n-3.</p>
+
 
 <h2>Part 2</h2>
 <p class="part">Find a group consisting of 2 or 3 members. Create the group in Absalon.</p>
-Our group has yet to be created but will include:
-<ul>
-  <li>Andrew (qcm239)</li>
-  <li>Vik (------)</li>
-</ul>
+Our group has been created and is called Andrew+Vik. However, we are not sure that Absalon has correctly registered our submission. Here is our student info in case things went wrong:
+<table border="1">
+  <tr>
+    <th >Name</th>
+    <th >Student No.</th>
+  </tr>
+  <tr>
+    <th class="mono">Andrew</th>
+    <th class="mono">qcm239</th>
+  </tr>
+  <tr>
+    <th class="mono">Vik</th>
+    <th class="mono">  </th>
+  </tr>
+</table>
+
 
 <h2>Part 3</h2>
 <p class="part">Create an empty <span class=mono>.html</span> page</p>
 <p>Done! But as you can see, it is not so <em>empty</em> any more!</p>
 <p>We are hosting this project page on <span class="mono">GitHub</span>.</p>
 
+
 <h2>Part 4</h2>
 <p class="part">Add a header to the page.</p>
 <p> Yeah so, we added a lot of headers to the page. It just looked so lonely with only one header.</p>
 
+
 <h2>Part 5</h2>
 <p class="part">Add a style section to the header of the page, and use it to change the color of the header to one of your choosing.</p>
 <p> In our style section, we changed the <span class="mono">color</span> attribute in <span class="mono">h1</span>, <span class="mono">h2</span> and <span class="mono">h3</span> to <span class="mono">darkred</span>.</p>
+
 
 <h2>Part 6</h2>
 <p class="part">Add a small, interesting image to the <span class="mono">.html</span> page.</p>
 <a href="https://images.nasa.gov/details-PIA15415.html" target="_blank">
   <img href="" src="https://images-assets.nasa.gov/image/PIA15415/PIA15415~orig.jpg">
 </a>
+
 
 <h2>Part 7</h2>
 <p class="part">Add another small, interesting image to the .html page, but now using only JavaScript (there should be no mention of the image anywhere within the <span class="mono">&lt;body&gt;...&lt;/body&gt;</span> section.</p>
@@ -143,6 +173,7 @@ Our group has yet to be created but will include:
     addImage();
   </script>
 </div>
+
 
 <h2>Part 8</h2>
 <p class="part">Create a list with links to two interactive visualizations that you've found on the web (not made by you). Describe positive and negative aspects about them.</p>
@@ -162,6 +193,7 @@ Our group has yet to be created but will include:
     <p>...positives and negatives go here</p>
 </ul>
 
+
 <h2>Part 9</h2>
 <p class="part">Individual part: For each member in the group, describe an interactive visualization that you would like to be able to build after this course has finished (just create a header for each group member on the <span class="mono">.html</span> page). If possible include elements like:</p>
 
@@ -179,7 +211,6 @@ Our group has yet to be created but will include:
 <p>The intended audience would be the public at large. I think most users of a metro system in a large metropolitan area would be interested in seeing the current state of the cities transit system. Kind of like checking the weather, just transit weather.</p>
 
 <p class="part">A sketch/mockup of the visualization.</p>
-
 
 <h3>Vik</h3>
 <p class="part">What type of data would you like to visualize?</p>
